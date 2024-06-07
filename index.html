@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Scores</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <img src="https://github.com/dougdevitre/images/blob/main/Minecraft_Mods.png?raw=true" alt="Minecraft" class="header-image">
+  </header>
+    <div class="container">
+        <h1>Minecraft Score Tracker</h1>
+      <p>Please sign up using your Minecraft username and email address.</p>
+<div class="container">
+  <div class="box box1">
+ <section id="registration">
+            <h2>Register</h2>
+   <p>Please enter in your Minecraft username and email address.
+   </p>
+            <form id="registrationForm">
+                <input type="text" id="username" placeholder="Username" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <button type="submit">Register</button>
+            </form>
+        </section>  </div>
+  <div class="box box2">
+ <section id="scores">
+            <h2>Submit Score</h2>
+          <p>Please submit your player score.</p>
+            <form id="scoreForm">
+                <input type="text" id="player" placeholder="Player Username" required>
+                <input type="number" id="score" placeholder="Score" required>
+                <button type="submit">Submit Score</button>
+            </form>
+        </section>  </div>
+  <div class="box box3">
+<section id="friends">
+            <h2>Add Friend</h2>
+            <form id="friendForm">
+                <input type="text" id="yourUsername" placeholder="Your Username" required>
+                <input type="text" id="friendUsername" placeholder="Friend's Username" required>
+                <button type="submit">Add Friend</button>
+            </form>
+        </section>  </div>
+  
+</div>
+        <section id="displayData">
+            <h2>Registered Users</h2>
+            <ul id="userList"></ul>
+
+            <h2>Scores</h2>
+            <ul id="scoreList"></ul>
+
+            <h2>Friends</h2>
+            <ul id="friendList"></ul>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
